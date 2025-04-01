@@ -2,23 +2,24 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import api from './api/api'
 
+import AnimeCentralProviders from './providers/AnimeCentralProviders/AnimeCentralProviders.jsx'
 import AnimeCentralProject from './pages/AnimeCentralProject/AnimeCentralProject.jsx'
 
-import { AnimeCentralProvider } from './AnimeCentralContext/AnimeCentralContext.jsx'
 
 
-function AnimeCentralFront() {
+
+
+export default function AnimeCentralFront() {
 
 
 
 
   return (
-    <AnimeCentralProvider>
+    <AnimeCentralProviders>
       <AnimeCentralProject/>
-    </AnimeCentralProvider>
+    </AnimeCentralProviders>
   )
 }
 
-export default AnimeCentralFront
+

@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react'
-import { AnimeCentralHook } from '../../hooks/AnimeCentralHook/AnimeCentralHook'
+import { AnimeCentralHook } from '../../hooks/AnimeCentralHook/AnimeCentralHook.js'
 
 
 export default function AnimeCentralProject() {
     const {animeData} = AnimeCentralHook()
-    useEffect(()=>{
-        console.log(animeData)
-    },[])
+ useEffect(()=>{
+    console.log(animeData)
+ },[])
   return (
-    <div className='flex'>
-    <p>{animeData.mal_id}</p>
+    <div className='flex '>
+        
+    <p>a</p>
     </div>
   )
 }
