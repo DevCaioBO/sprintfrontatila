@@ -11,7 +11,7 @@ export function AnimeCentralProvider({ children }) {
             setLoading(true)
             const readMyAnimeForCentral = async () => {
                 const response = await api.get('/random/anime')
-                setAnimeData(response.data)
+                setAnimeData(response.data.data)
                 console.log(response.data)
             }
             readMyAnimeForCentral()

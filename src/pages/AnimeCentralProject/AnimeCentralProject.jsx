@@ -5,12 +5,12 @@ import { AnimeCentralHook } from '../../hooks/AnimeCentralHook/AnimeCentralHook.
 export default function AnimeCentralProject() {
     const {animeData} = AnimeCentralHook()
  useEffect(()=>{
-    console.log(animeData)
- },[])
+    console.log()
+ },[animeData])
   return (
     <div className='flex '>
         
-    <p>a</p>
+    <img src={animeData.images?.webp.large_image_url} alt="" />
     </div>
   )
 }
