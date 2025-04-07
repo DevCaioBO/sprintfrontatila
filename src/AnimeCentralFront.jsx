@@ -16,6 +16,8 @@ export default function AnimeCentralFront() {
 
 
   return (
+    //caio<- Abraçamos o contexto de nossas rotas,
+    //caio<-  ou de nossa árvore de componentes com nosso meio de propagar valores armazenados
     <AnimeCentralProviders>
       <AnimeCentralProject/>
     </AnimeCentralProviders>
